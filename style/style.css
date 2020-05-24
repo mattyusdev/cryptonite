@@ -1,0 +1,535 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff6d09), to(#ff0f39));
+  background-image: linear-gradient(to right, #ff6d09 0%, #ff0f39 100%);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.spinner-border {
+  color: #ff6d09;
+}
+
+.gradient:focus {
+  outline: none;
+}
+
+.gradient:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff6d09), to(#ff0f39));
+  background-image: linear-gradient(to left, #ff6d09 0%, #ff0f39 100%);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.background {
+  min-height: 100vh;
+  background: url("../img/bg3.jpg"), url("../img/bglow.jpg") no-repeat #020646;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.background nav {
+  height: 150px;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.background nav .container {
+  max-width: 1300px;
+}
+
+.background nav .container #logo {
+  width: 200px;
+  cursor: pointer;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.background nav .container #logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.background nav .container #navbarNav {
+  z-index: 1;
+}
+
+.background nav .container #navbarNav li {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.background nav .container #navbarNav a {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.background nav .container #navbarNav a:hover,
+.background nav .container #navbarNav a:focus {
+  color: #ff3824;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.searchcontainer {
+  height: 150px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchcontainer input {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2424b5;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2424b5;
+          box-shadow: 0 0 1px #2424b5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.getstarted {
+  background: #f5f5f7;
+  min-height: calc(100vh - 300px);
+}
+
+div.coinscontainer {
+  min-height: calc(100vh - 300px);
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.coinscontainer header {
+  color: #fff;
+}
+
+div.coinscontainer header h1 {
+  font-size: 90px;
+  margin-bottom: 0;
+}
+
+div.coinscontainer header h2 {
+  font-size: 50px;
+}
+
+div.coinscontainer header h3 {
+  font-size: 25px;
+  font-weight: 300;
+  color: #a7a7b4;
+  margin-top: 15px;
+}
+
+div.coinscontainer header .gradient {
+  padding: 15px 40px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+div.coinscontainer #header {
+  width: 400px;
+}
+
+div.coinscontainer .cardframe {
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  border: none;
+}
+
+div.coinscontainer .cardframe .card-body h3 {
+  font-size: 30px;
+}
+
+div.coinscontainer .cardframe .card-body h4 {
+  font-size: 15px;
+}
+
+div.coinscontainer .cardframe .spinner-border {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+div.coinscontainer .cardframe button {
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+div.coinscontainer .cardframe div.moreinfo {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+div.coinscontainer .cardframe div.moreinfo ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 13px;
+}
+
+div.coinscontainer .spinner-border {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 60px;
+}
+
+div.modal div.modal-header {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+div.modal div.modal-header h5 {
+  opacity: 0.7;
+  letter-spacing: 3px;
+}
+
+div.modal div.modal-header .close {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 50px;
+}
+
+div.modal div.coinframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.modal div.coinframe h4 {
+  display: inline;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+div.modal button {
+  padding: 10px 25px;
+}
+
+div.about h3 {
+  font-size: 25px;
+  margin-top: 30px;
+  color: #444444;
+}
+
+div.about h3 span {
+  color: red;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+  .background {
+    background-color: #020646;
+  }
+  .background nav {
+    height: 130px;
+    padding: 0 30px;
+  }
+  .background nav .container #logo {
+    width: 190px;
+    margin-left: 20px;
+  }
+  div.coinscontainer {
+    margin: 0;
+  }
+  div.coinscontainer header h1 {
+    font-size: 70px;
+  }
+  div.coinscontainer header h2 {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+  div.coinscontainer header h3 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  div.coinscontainer header .gradient {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+  div.coinscontainer #header {
+    width: 370px;
+  }
+  div.modal div.modal-header {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  div.modal div.modal-header h3 {
+    font-size: 22px;
+  }
+  div.modal div.modal-header h5 {
+    font-size: 17px;
+  }
+  div.about h1 {
+    font-size: 35px;
+  }
+  div.about h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .background {
+    background-color: #020646;
+  }
+  .background nav {
+    height: 130px;
+    background: #060644;
+    padding: 0 0px;
+  }
+  .background nav .container {
+    min-width: 100% !important;
+    padding: 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .background nav .container #logo {
+    width: 180px;
+    cursor: pointer;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    margin-left: 20px;
+  }
+  .background nav .container button {
+    margin-right: 20px;
+    border: none;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .background nav .container button:focus {
+    outline: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .background nav .container span {
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  .background nav .container #navbarNav {
+    z-index: 1;
+  }
+  .background nav .container #navbarNav ul {
+    display: block;
+    min-width: 100%;
+  }
+  .background nav .container #navbarNav li {
+    display: block;
+    text-align: center;
+    background: #060644;
+    margin: 0px;
+    font-size: 18px;
+  }
+  .background nav .container #navbarNav a {
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 100%;
+    padding: 15px 0;
+  }
+  .background nav .container #navbarNav a:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#ff6d09), to(#ff0f39)) !important;
+    background: linear-gradient(to right, #ff6d09 0%, #ff0f39 100%) !important;
+    color: #fff;
+  }
+  .container {
+    max-width: 1300px;
+  }
+  .container #logo {
+    width: 200px;
+    cursor: pointer;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .container #logo:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .container #navbarNav {
+    z-index: 1;
+  }
+  .container #navbarNav li {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .container #navbarNav a {
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container #navbarNav a:hover,
+  .container #navbarNav a:focus {
+    color: #ff3824;
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  div.coinscontainer {
+    margin: 0;
+  }
+  div.coinscontainer header h1 {
+    font-size: 50px;
+  }
+  div.coinscontainer header h2 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  div.coinscontainer header h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #a7a7b4;
+    margin-top: 15px;
+  }
+  div.coinscontainer header .gradient {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+  div.coinscontainer #header {
+    width: 330px;
+  }
+  div.coinscontainer .cardframe {
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+    border: none;
+  }
+  div.coinscontainer .cardframe .card-body h3 {
+    font-size: 30px;
+  }
+  div.coinscontainer .cardframe .card-body h4 {
+    font-size: 15px;
+  }
+  div.coinscontainer .cardframe .spinner-border {
+    height: 30px;
+    width: 30px;
+  }
+  div.coinscontainer .spinner-border {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 60px;
+  }
+  div.modal div.modal-header {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  div.modal div.modal-header h3 {
+    font-size: 22px;
+  }
+  div.modal div.modal-header h5 {
+    font-size: 17px;
+  }
+  div.about h1 {
+    font-size: 30px;
+  }
+  div.about h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #444444;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

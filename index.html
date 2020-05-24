@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptonite</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</head>
+
+<body>
+
+    <div class="background">
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <img id="logo" src="img/cryptologo.png" alt="cryptonitelogo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid searchcontainer" style="display: none">
+            <input class="gradient" type="text" placeholder="Search...">
+        </div>
+
+        <main class="container-fluid">
+
+            <div class="container">
+
+                <div class="container row coinscontainer" style="display: none">
+                    <header class="col-6-sm">
+                        <h1>Get live</h1>
+                        <h2>Crypto currency data</h2>
+                        <h3>Compare between coins & see live changes</h3>
+                        <button id="getstartedbtn" class="gradient" type="button">Get Started</button>
+                    </header>
+                    <div class="col-6-sm text-right">
+                        <img id="header" src="img/headerimg4.png" alt="crypto">
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h3 class="modal-title">You can only have 5 coins</h3>
+                                <h5 class="modal-title">Please remove one</h5>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                            </div>
+
+                            <div class="modal-footer d-block text-center">
+                                <button type="button" class="gradient savebtn" data-dismiss="modal">Save</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
